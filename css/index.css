@@ -172,13 +172,14 @@ img {
   display: flex;
   justify-content: center;
   width: 100%;
+  border-bottom: 2px dotted silver;
 }
 .header header {
   border-bottom: 3px dotted black;
   margin: 2% 0 0 0;
   padding: 2% 0 4% 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 .header header h1 {
@@ -186,10 +187,36 @@ img {
 }
 .header header h1 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2%;
+  justify-content: center;
+  border-bottom: 0.2rem dashed silver;
+  margin-top: 1%;
+  padding-bottom: 1%;
   width: 40%;
+}
+.header header h1 nav nav div {
+  justify-content: space-between;
+  width: 60%;
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.header header h1 nav nav div nav a {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.header header h1 nav nav div nav a nav section {
+  justify-content: space-evenly;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-weight: bold;
+  width: 45%;
 }
 .footer {
   width: 100%;
