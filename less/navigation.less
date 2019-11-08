@@ -10,6 +10,9 @@
     width: 100%;
     margin: 0 auto;
     flex-direction: column;
+    @media @phone {
+      width:90%;
+    }
   }
 
 
@@ -54,3 +57,21 @@
     font-weight: bold;
     width: 45%;    
   }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    @media @phone {
+      margin-top: 4%;      
+    }
+    .photo {
+      @media @phone {
+        margin-bottom: 3%;
+      }
+    }
+  }
+

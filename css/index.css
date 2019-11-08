@@ -180,6 +180,11 @@ img {
   margin: 0 auto;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 nav {
   display: flex;
   justify-content: center;
@@ -215,6 +220,21 @@ nav section {
   padding-bottom: 1%;
   font-weight: bold;
   width: 45%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .info {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .info .photo {
+    margin-bottom: 3%;
+  }
 }
 .footer {
   width: 100%;
@@ -295,12 +315,13 @@ nav section {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 5% auto;
     width: 100%;
   }
 }
 .home .content-pick .destination {
   width: 30%;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
 }
 .home .content-pick .btn {
   display: block;

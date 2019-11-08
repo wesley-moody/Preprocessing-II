@@ -15,3 +15,13 @@
 
 // Media Queries
 @phone: ~'(max-width: 500px)';
+
+// Parametric mixin (flexbox)
+.flexmixin (@flexDir: row, @align: flex-start, @justify: flex-start, @wrap: nowrap){
+    display: flex;
+    flex-direction: @flexDir;
+    align-items: @align;
+    justify-content: @justify;
+    flex-wrap: @wrap;
+}
+
